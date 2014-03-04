@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/alga.png</file>
+        <file>img/ocean_main.png</file>
+        <file>img/shark.png</file>
+        <file>img/fish_0.png</file>
+        <file>img/fish_4.png</file>
+        <file>img/fish_3.png</file>
+        <file>img/fish_2.png</file>
+        <file>img/fish_1.png</file>
+        <file>img/go.png</file>
+        <file>img/update.png</file>
+    </qresource>
+</RCC>
