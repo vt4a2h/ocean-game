@@ -15,7 +15,8 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     grid.cpp \
-    gameocean.cpp
+    gameocean.cpp \
+    constants.cpp
 
 HEADERS  += mainwindow.h \
     grid.h \

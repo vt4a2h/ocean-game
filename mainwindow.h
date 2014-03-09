@@ -2,10 +2,14 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "gameocean.h"
+#include <QScopedPointer>
 
 namespace Ui {
     class MainWindow;
+}
+
+namespace game {
+    class GameOcean;
 }
 
 class MainWindow : public QMainWindow
@@ -16,14 +20,10 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-private slots:
-    void on_actionStart_triggered();
-    void on_actionNewGame_triggered();
-
 private:
     Ui::MainWindow *ui;
 
-    GameOcean *m_Game;
+    QScopedPointer<game::GameOcean> m_Game;
 };
 
 #endif // MAINWINDOW_H
