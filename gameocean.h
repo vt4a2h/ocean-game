@@ -30,7 +30,7 @@ namespace game {
     public slots:
         void newGame();
         void startGame();
-        void setUptime(float percent);
+        void setUpTime(float percent);
 
     private:
         // NOTE: mb stringlist

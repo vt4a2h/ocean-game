@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
             ui->hs_Speed->setValue(ui->hs_Speed->minimum());
     });
     connect(ui->hs_Speed, &QSlider::valueChanged,
-            m_Game.data(), &game::GameOcean::setUptime);
+            m_Game.data(), &game::GameOcean::setUpTime);
 
     connect(m_Game.data(), &game::GameOcean::sharkCountChanged, [this](size_t count){
         ui->lbl_sharkCount->setText(QString::number(count));

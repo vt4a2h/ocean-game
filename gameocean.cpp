@@ -31,7 +31,7 @@ namespace game {
         m_Scene->clear();
         addGrid();
 
-        setUptime(0);
+        setUpTime(0);
 
         qsrand(QTime::currentTime().msec());
 
@@ -47,7 +47,7 @@ namespace game {
         if (!m_Timer->isActive()) m_Timer->start();
     }
 
-    void GameOcean::setUptime(float percent)
+    void GameOcean::setUpTime(float percent)
     {
         m_Timer->setInterval(DEFAULT_UPTIME * (1 -  percent / 100));
     }
